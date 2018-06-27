@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<!--    
+     _                    _            
+    | |__   ___ _   _    (_) ___   ___ 
+    | '_ \ / _ \ | | |   | |/ _ \ / _ \
+    | | | |  __/ |_| |   | | (_) |  __/
+    |_| |_|\___|\__, |  _/ |\___/ \___|
+                |___/  |__/            
+
+    Front-end & Wordpress Development:
+
+    JONATHAN BELTRÁN A.K.A. HEY JOE
+    http://heyjoe.com.co
+    Email: hola@heyjoe.com.co 
+    Location: Bogotá, Colombia
+    
+-->
+<html class="no-js" lang="es">
+    <head>
+      <meta charset="utf-8">
+        <title>Zinc</title>
+        <!-- Meta Description -->
+        <meta name="description" content="Smart contracts, payment and identity management for the real estate world.">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Favicons -->
+        
+        <!-- Social Meta Facebook-->
+        
+        <!-- google web font -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+
+    <body>
+
+      <div class="the-dashboard">
+
+
+        <nav class="navbar fixed-top shadow mobile-nav d-flex d-lg-none">
+
+          <button class="hamburger hamburger--spring" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+
+
+          <a class="brand" href="#">
+            <img src="./assets/logo-zinc.svg" alt="Zinc">
+          </a>
+          
+        </nav><!-- mobile-nav -->
+
+        <div class="container-fluid">
+          <div class="row">
+            <nav class="col-lg-3 col-xl-2 sidebar sidebar-nav">
+              <div class="sidebar-sticky">
+                <div class="d-none d-lg-block brand-wrapper">
+                  <a href="#">
+                    <img src="./assets/logo-zinc.svg" alt="Zinc">
+                  </a>
+                </div><!-- brand-wrapper -->
+                
+                <div class="d-none d-lg-block user-name">
+                  Welcome <span class="user-name-txt">Luis</span>
+                </div>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" href="#">
+                      <span class="icon icon-settings"></span>
+                      <span class="txt">Settings</span>
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link d-flex align-items-center dropdown-link collapsed" data-toggle="collapse" href="#transactions" role="button" aria-expanded="false" aria-controls="transactions">
+                      <span class="icon icon-transactions"></span>
+                      <span class="txt">Transactions</span>
+                    </a>
+                    <div class="collapse" id="transactions">
+                      <div class="card card-body">
+                        <ul>
+                          <li>
+                            <a href="#">Current Transactions</a>
+                          </li>
+                          <li>
+                            <a href="#">Past Transactions</a>
+                          </li>
+                          <li>
+                            <a href="#">Upcoming Transactions</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active d-flex align-items-center" href="#">
+                      <span class="icon icon-properties"></span>
+                      <span class="txt">My properties</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" href="#">
+                      <span class="icon icon-log-out"></span>
+                      <span class="txt">Log Out</span>
+                    </a>
+                  </li>
+                  
+                </ul><!-- nav -->
+
+                <div class="smart-secure d-none d-lg-flex justify-content-center align-items-center">
+                  <span class="txt-bold">smart • secure</span>
+                </div><!-- smart-secure -->
+           
+              </div><!-- sidebar-sticky -->
+            </nav><!-- sidebar-nav -->
+
+            <main role="main" class="col-lg-9 col-xl-10 main-content d-flex flex-column">
+
+              <div class="d-block d-lg-none user-name-mobile">
+                Welcome <span class="user-name-txt">Luis</span>
+              </div>
+
+              <div class="chat-wrapper">
+                <a href=""><span class="sr-only">chat</span></a>
+              </div>
+
+              <section class="a-section my-properties opened-property">
+
+                <h1 class="section-title">
+                  <span class="txt-italic">my</span> properties
+                </h1>
+
+                <h2 class="section-subtitle">
+                  Property List
+                </h2>
+
+                <ul class="property-list">
+
+                  <li class="a-property d-flex justify-content-between align-items-center">
+                    <div class="property-info d-flex flex-column flex-md-row align-items-top justify-content-between">
+                      <ul>
+                        <li class="property-name">Icon Brickell Condo No1</li>
+                        <li class="property-address">475 Brickell Ave</li>
+                        <li class="property-city">Miami, FL 33131</li>
+                      </ul>
+
+                      <ul class="city-">
+                        <li class="property-city-main">
+                          City
+                        </li>
+                        <li class="property-city">Miami</li>
+                      </ul>
+
+                      <ul class="state-">
+                        <li class="property-state-main">
+                          State
+                        </li>
+                        <li class="property-state">FL</li>
+                        <li class="property-id d-block d-lg-none">Property ID: 5032</li>
+                      </ul>
+                    </div><!-- property-info -->
+                    <div class="property-link d-flex flex-column">
+                      <div class="more-wrapper d-flex justify-content-end flex-column flex-lg-row align-items-end align-items-lg-center">
+                        <a href="#" class="btn green">Save</a>
+                      </div>
+                      <span class="property-id d-none d-lg-block mt-auto">Property ID: 5032</span>
+                    </div><!-- property-link -->
+                  </li><!-- a-property -->
+
+                </ul><!-- property-list -->
+
+                <div class="box">
+                  <h2>Management Company</h2>
+                  <h3>First service residential</h3>
+                  <a href="#" class="btn-edit"><span class="sr-only">Edit</span></a>
+
+                  <div class="team">
+                    <h2>Team</h2>
+                    <div class="team-list">
+                      <form class="d-flex justify-content-between align-items-start">
+                        <ul class="team-name">
+                          <li class="list-title">
+                            Name
+                          </li>
+                          <li>Luis Teran <span class="email d-block d-sm-none">luis@tenantevaluation.com</span></li>
+                          <li>Leo C <span class="email d-block d-sm-none">leo@tenantevaluation.com</span></li>
+                          <li>Jabier Merino <span class="email d-block d-sm-none">jabier@tenantevaluation.com</span></li>
+                        </ul><!-- team-name -->
+                        <ul class="team-email d-none d-sm-block">
+                          <li class="list-title">
+                            Email
+                          </li>
+                          <li>luis@tenantevaluation.com</li>
+                          <li>leo@tenantevaluation.com</li>
+                          <li>jabier@tenantevaluation.com</li>
+                        </ul><!-- team-email -->
+                        <ul class="team-email">
+                          <li class="list-title">
+                            Level Access
+                          </li> 
+                          <li>
+                            <div class="form-group">
+                              <label for="access-one" class="sr-only">Level Access</label>
+                              <select class="form-control" id="access-one">
+                                <option>admin</option>
+                                <option>manager</option>
+                              </select>
+                            </div>
+                          </li>  
+                          <li>
+                            <div class="form-group">
+                              <label for="access-one" class="sr-only">Level Access</label>
+                              <select class="form-control" id="access-one">
+                                <option>admin</option>
+                                <option>manager</option>
+                              </select>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-group">
+                              <label for="access-one" class="sr-only">Level Access</label>
+                              <select class="form-control" id="access-one">
+                                <option>admin</option>
+                                <option>manager</option>
+                              </select>
+                            </div>
+                          </li> 
+
+                        </ul><!-- team-email -->
+                        <ul class="user-action">
+                          <li class="list-title">
+                            delete
+                          </li>  
+                          <li>
+                            <a href="#" class="btn-delete"><span class="sr-only">delete</span></a>
+                          </li>
+                          <li>
+                            <a href="#" class="btn-delete"><span class="sr-only">delete</span></a>
+                          </li>
+                          <li>
+                            <a href="#" class="btn-delete"><span class="sr-only">delete</span></a>
+                          </li>
+                        </ul><!-- user-action -->
+                      </form>
+                      <a href="#" class="btn green mt-4 mb-2 px-4 py-2 plus">Invite more members</a>
+                    </div><!-- team-list -->
+                  </div><!-- team -->
+                </div><!-- box -->
+
+                <div class="box bank-settings">
+                  <h2>Bank Settings</h2>
+                  <p>Choose one of the following bank accounts.</p>
+                  <form>
+                    <div class="form-group">
+                      <label for="access-one" class="sr-only">Level Access</label>
+                      <select class="form-control" id="access-one">
+                        <option>Deposit Bank Account - 1</option>
+                        <option>Deposit Bank Account - 2</option>
+                      </select>
+                    </div>
+                  </form>
+
+                  <h2 class="mt-4 mb-3">Account Information</h2>
+                  <div class="account-information">
+                    <div class="user-actions">
+                      <a href="#" class="btn-close"><span class="sr-only">Close</span></a>
+                      <a href="#" class="btn-edit"><span class="sr-only">Edit</span></a>
+                    </div>
+                    <ul class="bank-account-name">
+                      <li><span class="txt-bold">Bank Account Name:</span> Deposit bank account</li>
+                    </ul>
+                    <div class="account-info-item d-flex justify-content-between flex-column flex-md-row">
+                      <ul>
+                        <li><span class="txt-bold">Billing Address:</span> 1290 Biscayne Blvd</li>
+                        <li><span class="txt-bold">State:</span> FL</li>
+                        <li><span class="txt-bold">Routing Number:</span> xxxxxxxxxx9842</li>
+                      </ul>
+                      <ul>
+                        <li><span class="txt-bold">City:</span> Miami</li>
+                        <li><span class="txt-bold">Zip Code:</span> 33135</li>
+                        <li><span class="txt-bold">Account Number:</span> xxxxx1276</li>
+                      </ul>
+                      <ul class="">
+                        <button class="btn green"><span class="txt-bold">Save</span></button>  
+                      </ul>
+                    </div><!-- account-info-item -->
+                  </div><!-- account-information -->
+
+                  
+                  <h2 class="mt-4">Transactions</h2>
+                  <div class="transaction-list d-none d-xl-flex justify-content-between align-items-start">
+                    <ul class="transaction-status">
+                      <li class="list-title">Status</li>
+                      <li>Approved</li>
+                      <li>Approved</li>
+                      <li>In progress</li>
+                    </ul><!-- transaction-status -->
+                    <ul class="transaction-description">
+                      <li class="list-title">Description</li>
+                      <li>Security Deposit</li>
+                      <li>Security Deposit</li>
+                      <li>Pet Deposit</li>
+                    </ul><!-- transaction-description -->
+                    <ul class="transaction-amount">
+                      <li class="list-title">Amount</li>
+                      <li>$1.250</li>
+                      <li>$1.250</li>
+                      <li>$150</li>
+                    </ul><!-- transaction-amount -->
+                    <ul class="transaction-subject">
+                      <li class="list-title">Subject</li>
+                      <li>Tenant</li>
+                      <li>Guest</li>
+                      <li>Pet</li>
+                    </ul><!-- transaction-subject -->
+                    <ul class="transaction-deposit-bank">
+                      <li class="list-title">Deposit Bank</li>
+                      <li>xxxxx1276</li>
+                      <li>xxxxx1276</li>
+                      <li>xxxxx1276</li>
+                    </ul><!-- transaction-deposit-bank -->
+                    <ul class="transaction-id">
+                      <li class="list-title">Transaction ID</li>
+                      <li>NF463</li>
+                      <li>OP3592</li>
+                      <li>TH2364</li>
+                    </ul><!-- transaction-id -->
+                  </div><!-- transaction-list -->
+
+                  <div class="transaction-list-mobile d-block d-xl-none">
+                    <ul class="a-transaction-">
+                      <li><span class="txt-bold">Status</span> Approved</li>
+                      <li><span class="txt-bold">Description</span> Security Deposit</li>
+                      <li><span class="txt-bold">Ammount</span> $1.250</li>
+                      <li><span class="txt-bold">Subject</span> Tenant</li>
+                      <li><span class="txt-bold">Deposit Bank</span> xxxxx1276</li>
+                      <li><span class="txt-bold">Transaction ID</span> NF463</li>
+                    </ul><!-- a-transaction- -->
+
+                    <ul class="a-transaction-">
+                      <li><span class="txt-bold">Status</span> Approved</li>
+                      <li><span class="txt-bold">Description</span> Security Deposit</li>
+                      <li><span class="txt-bold">Ammount</span> $1.250</li>
+                      <li><span class="txt-bold">Subject</span> Tenant</li>
+                      <li><span class="txt-bold">Deposit Bank</span> xxxxx1276</li>
+                      <li><span class="txt-bold">Transaction ID</span> NF463</li>
+                    </ul><!-- a-transaction- -->
+
+                    <ul class="a-transaction-">
+                      <li><span class="txt-bold">Status</span> Approved</li>
+                      <li><span class="txt-bold">Description</span> Security Deposit</li>
+                      <li><span class="txt-bold">Ammount</span> $1.250</li>
+                      <li><span class="txt-bold">Subject</span> Tenant</li>
+                      <li><span class="txt-bold">Deposit Bank</span> xxxxx1276</li>
+                      <li><span class="txt-bold">Transaction ID</span> NF463</li>
+                    </ul><!-- a-transaction- -->
+                  </div><!-- transaction-mobile -->
+                  
+
+
+                  
+                </div><!-- box -->
+
+              </section><!-- my-properties -->
+
+              <section class="a-section smart-contracts">
+                <h1 class="section-title">
+                  <span class="txt-italic">my</span> smart contracts
+                </h1>
+                <div class="box">
+                  <p>Select from our template gallery the fees you want to use on this property</p>
+                  <btn href="#" class="btn green mt-3 mb-2 px-4 py-2 plus">Add new contract</btn>
+                </div><!-- box -->
+              </section><!-- smart-contracts -->
+
+              <div class="legal-wrapper mt-auto align-self-center align-self-lg-end">
+                ©2018 Zinc  |  All rights reserved
+              </div>
+
+
+
+              <footer class="d-block d-lg-none">
+                <div class="smart-secure d-flex justify-content-center align-items-center">
+                  <span class="txt-bold">smart • secure</span>
+                </div><!-- smart-secure -->
+              </footer>
+
+            </main><!-- main-content -->
+
+          </div><!-- row -->
+        </div><!-- container-fluid -->
+
+        
+      </div><!-- the-dashboard -->
+
+     
+
+
+        <script src="./js/modernizr.js"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/sweetalert2.all.min.js"></script>
+        <script src="./js/signature_pad.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

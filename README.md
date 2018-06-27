@@ -1,2 +1,2 @@
-# zincDashboard
-dahsboard app for Zinc
+# Zinc Dashboard
+dashboard app for Zinc.

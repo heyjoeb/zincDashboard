@@ -1,0 +1,5 @@
+# Don't track content of these folders and files
+node_modules/ 
+gulpfile.js
+package.json
+package-lock.json

@@ -101,6 +101,9 @@ html, body {
 .txt-black {
   color: #141414; }
 
+.txt-blue {
+  color: #323b8c; }
+
 a {
   color: #ffffff;
   text-decoration: none;
@@ -298,6 +301,8 @@ LOGIN & CREATE ACCOUNT
     .login {
       padding-left: 30px;
       padding-right: 30px; } }
+  .login .txt-bold {
+    font-weight: 700; }
   .login .main-logo {
     margin-bottom: 60px; }
     .login .main-logo img {
@@ -355,8 +360,18 @@ LOGIN & CREATE ACCOUNT
     @media (max-width: 767px) {
       .login .legal-info-wrapper {
         color: #ffffff; } }
+  .login .txt-link {
+    color: #323b8c;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 0.9rem; }
+    .login .txt-link:hover, .login .txt-link:focus, .login .txt-link:active {
+      color: #d04741;
+      text-decoration: underline;
+      opacity: 1; }
   .login .txt-giant {
-    color: #323b8c; }
+    color: #323b8c;
+    margin-top: 30px; }
     @media (max-width: 767px) {
       .login .txt-giant {
         color: #ffffff;
@@ -635,11 +650,165 @@ DASHBOARD
         .the-dashboard .main-content .chat-wrapper a:hover, .the-dashboard .main-content .chat-wrapper a:focus, .the-dashboard .main-content .chat-wrapper a:active {
           background-color: #d04741;
           opacity: 1; }
+    .the-dashboard .main-content .question-wrapper {
+      position: absolute;
+      right: 90px;
+      top: 50px; }
+      @media (max-width: 991px) {
+        .the-dashboard .main-content .question-wrapper {
+          top: auto;
+          bottom: 45px;
+          right: 30px;
+          z-index: 5; } }
+      .the-dashboard .main-content .question-wrapper a {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: block;
+        background-size: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../assets/icon-question.svg"); }
+      .the-dashboard .main-content .question-wrapper.active a {
+        background-image: url("../assets/icon-question-green.svg"); }
+    .the-dashboard .main-content .overview-container .box {
+      padding: 10px 20px;
+      color: #6d6e70;
+      font-weight: 400;
+      position: relative; }
+    .the-dashboard .main-content .overview-container .content-info {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+      margin-top: 10px; }
+    .the-dashboard .main-content .overview-container .content-about {
+      margin-bottom: 0;
+      font-size: 0.9rem; }
+    .the-dashboard .main-content .overview-container .icon {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      background-repeat: no-repeat; }
+      .the-dashboard .main-content .overview-container .icon.money-icon {
+        width: 15px;
+        height: 40px;
+        background-image: url(../assets/icon-money-green.svg); }
+      .the-dashboard .main-content .overview-container .icon.transaction-icon {
+        width: 25px;
+        height: 40px;
+        background-image: url(../assets/icon-transaction-green.svg); }
+      .the-dashboard .main-content .overview-container .icon.property-icon {
+        width: 30px;
+        height: 40px;
+        background-image: url(../assets/icon-property-green.svg); }
+      .the-dashboard .main-content .overview-container .icon.customers-icon {
+        width: 30px;
+        height: 40px;
+        background-image: url(../assets/icon-customers-green.svg); }
   .the-dashboard .a-section {
     margin-top: 95px; }
     @media (max-width: 991px) {
       .the-dashboard .a-section {
         margin-top: 30px; } }
+    .the-dashboard .a-section .intro.txt-blue {
+      font-size: 1.1rem;
+      margin-bottom: 0; }
+  .the-dashboard .the-overview .transaction-list {
+    background-color: #ffffff;
+    border: solid 1px #dbdbdb; }
+  .the-dashboard .the-overview .btn.green {
+    padding: 5px 35px;
+    font-size: 0.9rem; }
+  .the-dashboard .the-overview .section-subtitle {
+    margin-bottom: 0; }
+    @media (max-width: 1199px) {
+      .the-dashboard .the-overview .section-subtitle {
+        font-size: 0.9rem; } }
+  .the-dashboard .the-overview .txt-link {
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    display: inline-block;
+    margin-bottom: 50px; }
+  .the-dashboard .the-overview .txt-bold {
+    font-weight: 700; }
+  .the-dashboard .the-overview .btn-edit {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-image: url(../assets/icon-edit-dark.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .the-dashboard .the-overview .btn-edit:hover, .the-dashboard .the-overview .btn-edit:active, .the-dashboard .the-overview .btn-edit:focus {
+      opacity: 0.6; }
+  .the-dashboard .the-overview .a-transaction {
+    border: 0;
+    background-color: transparent;
+    margin-bottom: 0; }
+    .the-dashboard .the-overview .a-transaction:nth-child(even) {
+      background-color: #f5f6f6; }
+    .the-dashboard .the-overview .a-transaction .transaction-link {
+      background-color: transparent; }
+      @media (max-width: 1199px) {
+        .the-dashboard .the-overview .a-transaction .transaction-link {
+          padding-right: 0; } }
+    @media (max-width: 1199px) {
+      .the-dashboard .the-overview .a-transaction .transaction-info ul {
+        padding-left: 0; } }
+    .the-dashboard .the-overview .a-transaction .application-number {
+      padding-top: 0;
+      font-weight: 400; }
+    .the-dashboard .the-overview .a-transaction .badge {
+      min-width: 80px; }
+      .the-dashboard .the-overview .a-transaction .badge.paid {
+        background-color: #9ec54c; }
+      .the-dashboard .the-overview .a-transaction .badge.start {
+        background-color: #d04741; }
+      .the-dashboard .the-overview .a-transaction .badge.pending {
+        background-color: #323b8c; }
+    .the-dashboard .the-overview .a-transaction .the-profile li {
+      margin-bottom: 15px; }
+  .the-dashboard .faqs .box {
+    background-color: transparent;
+    border: 0; }
+  .the-dashboard .faqs .a-question {
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: solid 1px #dbdbdb; }
+  .the-dashboard .faqs .accordion .show {
+    background-color: #f1f2f2; }
+  .the-dashboard .faqs .accordion button {
+    border: 0;
+    background-color: #f1f2f2;
+    color: #6d6e70;
+    padding: 0.75rem 1.25rem;
+    display: block;
+    width: 100%;
+    text-align: left;
+    transition: all 100ms linear;
+    position: relative; }
+    .the-dashboard .faqs .accordion button:hover {
+      opacity: 0.7;
+      transition: all 100ms linear; }
+    .the-dashboard .faqs .accordion button.collapsed {
+      background-color: transparent; }
+      .the-dashboard .faqs .accordion button.collapsed:after {
+        background-image: url("../assets/icon-plus-gray.svg"); }
+    .the-dashboard .faqs .accordion button:after {
+      background-image: url("../assets/icon-x-gray.svg");
+      display: block;
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      content: ""; }
+  .the-dashboard .faqs .accordion .card-header {
+    background-color: transparent;
+    padding: 0;
+    border: 0; }
+  .the-dashboard .faqs .accordion .card-body {
+    color: #6d6e70; }
   .the-dashboard .section-title {
     color: #323b8c;
     font-weight: 700;
@@ -2214,6 +2383,88 @@ DASHBOARD
 .custom .swal2-popup .swal2-title {
   font-size: 1.4rem;
   margin-bottom: 20px; }
+
+.custom .swal2-popup .section-title {
+  color: #323b8c;
+  font-weight: 700;
+  font-size: 2.2rem;
+  position: relative;
+  margin-bottom: 15px; }
+  @media (max-width: 1199px) {
+    .custom .swal2-popup .section-title {
+      font-size: 2.7rem; } }
+  @media (max-width: 575px) {
+    .custom .swal2-popup .section-title {
+      font-size: 2.1rem; } }
+  .custom .swal2-popup .section-title .txt-italic {
+    font-weight: 300;
+    font-style: italic; }
+
+.custom .swal2-popup .custom-checkbox {
+  position: relative;
+  width: 100%;
+  padding-left: 0;
+  border-bottom: solid 1px #eaeaea;
+  padding-bottom: 25px;
+  margin-bottom: 0; }
+  .custom .swal2-popup .custom-checkbox .custom-control-label {
+    padding-left: 0;
+    width: 100%;
+    color: #6d6e70;
+    font-weight: 400; }
+    @media (max-width: 1199px) {
+      .custom .swal2-popup .custom-checkbox .custom-control-label {
+        font-size: 1rem; } }
+    @media (max-width: 767px) {
+      .custom .swal2-popup .custom-checkbox .custom-control-label {
+        font-size: 0.9rem; } }
+
+.custom .swal2-popup .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #d04741; }
+
+.custom .swal2-popup .custom-control-label::before {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  left: auto;
+  top: 0; }
+
+.custom .swal2-popup .custom-control-label::after {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: auto; }
+
+.custom .swal2-popup .with-icon {
+  background-position: left 10px;
+  background-repeat: no-repeat; }
+  .custom .swal2-popup .with-icon .custom-control-label {
+    padding-left: 40px;
+    padding-top: 10px; }
+    .custom .swal2-popup .with-icon .custom-control-label:after {
+      top: 5px; }
+    .custom .swal2-popup .with-icon .custom-control-label:before {
+      top: 5px; }
+  .custom .swal2-popup .with-icon.security-deposit {
+    background-size: 24px;
+    background-image: url(../assets/icon-security-deposit-green.svg); }
+  .custom .swal2-popup .with-icon.move-in {
+    background-size: 26px;
+    background-image: url(../assets/icon-move-in-green.svg); }
+  .custom .swal2-popup .with-icon.elevator-fee {
+    background-size: 22px;
+    background-image: url(../assets/icon-elevator-fee-green.svg); }
+  .custom .swal2-popup .with-icon.pet-fee {
+    background-size: 24px;
+    background-image: url(../assets/icon-pet-fee-green.svg); }
+  .custom .swal2-popup .with-icon.common-area-deposit {
+    background-size: 24px;
+    background-image: url(../assets/icon-common-area-deposit-green.svg); }
 
 .custom .swal2-popup .swal2-content {
   font-size: 1rem; }

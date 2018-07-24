@@ -195,6 +195,9 @@ html, body {
 .txt-black {
   color: $black;
 }
+.txt-blue {
+    color: $blue;
+}
 
 a {
 	color: $white;
@@ -421,6 +424,9 @@ LOGIN & CREATE ACCOUNT
         padding-left: 30px;
         padding-right: 30px;
     }
+    .txt-bold {
+        font-weight: 700;
+    }
     .main-logo {
         margin-bottom: 60px;
         img {
@@ -486,8 +492,20 @@ LOGIN & CREATE ACCOUNT
             color: $white;
         }
     }
+    .txt-link {
+        color: $blue;
+        text-decoration: underline;
+        font-weight: 700;
+        font-size: 0.9rem;
+        &:hover, &:focus, &:active {
+            color: $red;
+            text-decoration: underline;
+            opacity: 1;
+        }
+    }
     .txt-giant {
         color: $blue;
+        margin-top: 30px;
         @include breakpoint(md_max) {
             color: $white;
             margin-top: 50px;
@@ -790,11 +808,226 @@ DASHBOARD
                 }
             }
         }
+
+        .question-wrapper {
+            position: absolute;
+            right: 90px;
+            top: 50px;
+            @include breakpoint(lg_max) {
+                top: auto;
+                bottom: 45px;
+                right: 30px;
+                z-index: 5;
+            }
+            a {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: block;
+                background-size: 40px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url('../assets/icon-question.svg');
+                
+            }
+            &.active {
+                a {
+                    background-image: url('../assets/icon-question-green.svg');
+                }
+            }
+        }
+        .overview-container {
+            .box {
+                padding: 10px 20px;
+                color: #6d6e70;
+                font-weight: 400;
+                position: relative;
+
+            }
+            .content-info {
+                font-size: 1.5rem;
+                margin-bottom: 5px;
+                margin-top: 10px;
+            }
+            .content-about {
+                margin-bottom: 0;
+                font-size: 0.9rem;
+            }
+            .icon {
+                position: absolute;
+                left: 20px;
+                top: 20px;
+                background-repeat: no-repeat;
+                &.money-icon {
+                    width: 15px;
+                    height: 40px;
+                    background-image: url(../assets/icon-money-green.svg);
+                }
+                &.transaction-icon {
+                    width: 25px;
+                    height: 40px;
+                    background-image: url(../assets/icon-transaction-green.svg);
+                }
+                &.property-icon {
+                    width: 30px;
+                    height: 40px;
+                    background-image: url(../assets/icon-property-green.svg);
+                }
+                &.customers-icon {
+                    width: 30px;
+                    height: 40px;
+                    background-image: url(../assets/icon-customers-green.svg);
+                }
+            }
+        }
     }
     .a-section {
         margin-top: 95px;
         @include breakpoint(lg_max) {
             margin-top: 30px;
+        }
+        .intro {
+            &.txt-blue {
+                font-size: 1.1rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .the-overview {
+        .transaction-list {
+            background-color: $white;
+            border: solid 1px #dbdbdb;
+        }
+        .btn {
+                &.green {
+                    padding: 5px 35px;
+                    font-size: 0.9rem;
+                }
+            }
+        .section-subtitle {
+            margin-bottom: 0;
+            @include breakpoint(xl_max) {
+                font-size: 0.9rem;
+            }
+        }
+        .txt-link {
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            display: inline-block;
+            margin-bottom: 50px;
+        }
+        .txt-bold {
+            font-weight: 700;
+        }
+        .btn-edit {
+                width: 20px;
+                height: 20px;
+                display: block;
+                background-image: url(../assets/icon-edit-dark.svg);
+                background-size: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                &:hover, &:active, &:focus {
+                    opacity: 0.6;
+                }
+            }
+        .a-transaction {
+            border: 0;
+            background-color: transparent;
+            margin-bottom: 0;
+            &:nth-child(even) {
+                background-color: #f5f6f6;
+            }
+            .transaction-link {
+                background-color: transparent;
+                @include breakpoint(xl_max) {
+                        padding-right: 0;
+                }
+            }
+            .transaction-info {
+                ul {
+                    @include breakpoint(xl_max) {
+                        padding-left: 0;
+                    }
+                }
+            }
+            .application-number {
+                padding-top: 0;
+                font-weight: 400;
+            }
+            .badge {
+                min-width: 80px;
+                &.paid {
+                    background-color: $green;
+                }
+                &.start {
+                    background-color: $red;
+                }
+                &.pending {
+                    background-color: $blue;
+                }
+            }
+            .the-profile {
+                li {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    .faqs {
+        .box {
+            background-color: transparent;
+            border: 0;
+        }
+        .a-question {
+            background-color: #fff;
+            margin-bottom: 20px;
+            border: solid 1px #dbdbdb;
+        }
+        .accordion {
+            .show {
+                background-color: #f1f2f2;
+            }
+            button {
+                border: 0;
+                background-color: #f1f2f2;
+                color: #6d6e70;
+                padding: 0.75rem 1.25rem;
+                display: block;
+                width: 100%;
+                text-align: left;
+                transition: all 100ms linear;
+                position: relative;
+                &:hover {
+                    opacity: 0.7;
+                    transition: all 100ms linear;
+                }
+                &.collapsed {
+                    background-color: transparent;
+                    &:after {
+                        background-image: url('../assets/icon-plus-gray.svg');
+                    }
+                }
+                &:after {
+                    background-image: url('../assets/icon-x-gray.svg');
+                    display: block;
+                    width: 14px;
+                    height: 14px;
+                    position: absolute;
+                    right: 20px;
+                    top: 15px;
+                    content: "";
+                }
+            }
+            .card-header {
+                background-color: transparent;
+                padding: 0;
+                border: 0;
+            }
+            .card-body {
+                color: #6d6e70;
+            }
         }
     }
     .section-title {
@@ -2780,6 +3013,99 @@ DASHBOARD
         .swal2-title {
             font-size: 1.4rem;
             margin-bottom: 20px;
+        }
+
+        .section-title {
+            color: $blue;
+            font-weight: 700;
+            font-size: 2.2rem;
+            position: relative;
+            margin-bottom: 15px;
+            @include breakpoint(xl_max) {
+                font-size: 2.7rem;
+            }
+            @include breakpoint(sm_max) {
+                font-size: 2.1rem;
+            }
+            .txt-italic {
+                font-weight: 300;
+                font-style: italic;
+            }
+        }
+        .custom-checkbox {
+            position: relative;
+            width: 100%;
+            padding-left: 0;
+            border-bottom: solid 1px #eaeaea;
+            padding-bottom: 25px;
+            margin-bottom: 0;
+            .custom-control-label {
+                padding-left: 0;
+                width: 100%;
+                color: #6d6e70;
+                font-weight: 400;
+                @include breakpoint(xl_max) {
+                    font-size: 1rem;
+                }
+                @include breakpoint(md_max) {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+        .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+            background-color: $red;
+        }
+        .custom-control-label::before {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            left: auto;
+            top: 0;
+        }
+        .custom-control-label::after {
+          width: 2rem;
+            height: 2rem;
+            border-radius: 50%;  
+            position: absolute;
+            right: 0;
+            top: 0;
+            left: auto;
+        }
+        .with-icon {
+            background-position: left 10px;
+            background-repeat: no-repeat;
+            .custom-control-label {
+                padding-left: 40px;
+                padding-top: 10px;
+                &:after {
+                   top: 5px;
+                }
+                &:before {
+                    top: 5px;
+                }
+            }
+            &.security-deposit {
+                background-size: 24px;
+                background-image: url(../assets/icon-security-deposit-green.svg);
+            }
+            &.move-in {
+                background-size: 26px;
+                background-image: url(../assets/icon-move-in-green.svg);
+            }
+            &.elevator-fee {
+                background-size: 22px;
+                background-image: url(../assets/icon-elevator-fee-green.svg);
+            }
+            &.pet-fee {
+                background-size: 24px;
+                background-image: url(../assets/icon-pet-fee-green.svg);
+            }
+            &.common-area-deposit {
+                background-size: 24px;
+                background-image: url(../assets/icon-common-area-deposit-green.svg);
+            }
         }
         .swal2-content {
             font-size: 1rem;

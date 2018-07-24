@@ -408,12 +408,11 @@
 
         <script>
           swal({
-            title: 'Select the smart contracts you want to add to this property',
-            type: 'info',
+            title: false,
             showCloseButton: true,
             showConfirmButton: false,
             html: 
-            '<form class="text-left"><div class="form-group"> <label for="contractSelect" class="sr-only">Select the smart contracts you want ot add to this property</label> <select multiple class="form-control" id="contractSelect"> <option>lease contract</option> <option>parking agreement</option> <option>deposit contract</option> <option>pet deposit</option> </select> </div> <button type="submit" class="btn green plus">Add</button> </form>'
+            '<h1 class="section-title text-left"><span class="txt-italic">my</span> smart contracts</h1><p class="text-left">Select the smart contracts you want ot assign to this property</p><form class="text-left"><div class="form-group with-icon security-deposit"> <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="security-deposit"><label class="custom-control-label" for="security-deposit">security deposit</label></div></div><div class="form-group with-icon move-in"> <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="move-in"><label class="custom-control-label" for="move-in">move-in free</label></div></div><div class="form-group with-icon elevator-fee"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="elevator-fee"><label class="custom-control-label" for="elevator-fee">elevator fee</label></div></div><div class="form-group with-icon pet-fee"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="pet-fee"><label class="custom-control-label" for="pet-fee">pet fee</label></div></div><div class="form-group with-icon common-area-deposit"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="common-area-deposit"><label class="custom-control-label" for="common-area-deposit">common area deposit</label></div></div><button type="submit" class="btn green plus">Save</button> </form>'
           })
         </script>
     </body>

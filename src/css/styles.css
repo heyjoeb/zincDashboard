@@ -369,6 +369,9 @@ LOGIN & CREATE ACCOUNT
       color: #d04741;
       text-decoration: underline;
       opacity: 1; }
+    @media (max-width: 767px) {
+      .login .txt-link {
+        color: #fff; } }
   .login .txt-giant {
     color: #323b8c;
     margin-top: 30px; }
@@ -809,6 +812,61 @@ DASHBOARD
     border: 0; }
   .the-dashboard .faqs .accordion .card-body {
     color: #6d6e70; }
+  .the-dashboard .help .section-title {
+    padding-left: 70px; }
+    @media (max-width: 991px) {
+      .the-dashboard .help .section-title {
+        padding-left: 0; } }
+    .the-dashboard .help .section-title:before {
+      content: "";
+      background-image: url(../assets/icon-help-gray.svg);
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 0;
+      width: 52px;
+      height: 52px;
+      top: -5px; }
+      @media (max-width: 991px) {
+        .the-dashboard .help .section-title:before {
+          width: 42px;
+          height: 42px;
+          position: relative;
+          left: auto;
+          top: auto;
+          display: block; } }
+      @media (max-width: 575px) {
+        .the-dashboard .help .section-title:before {
+          width: 32px;
+          height: 32px; } }
+  .the-dashboard .help .box {
+    padding: 50px; }
+  .the-dashboard .help .btn {
+    padding: 5px 35px; }
+  .the-dashboard .help textarea {
+    resize: none;
+    line-height: 1.5; }
+    .the-dashboard .help textarea::-webkit-input-placeholder {
+      color: #a6a8aa;
+      font-size: 1.1rem;
+      font-weight: 300; }
+    .the-dashboard .help textarea:-ms-input-placeholder {
+      color: #a6a8aa;
+      font-size: 1.1rem;
+      font-weight: 300; }
+    .the-dashboard .help textarea::-ms-input-placeholder {
+      color: #a6a8aa;
+      font-size: 1.1rem;
+      font-weight: 300; }
+    .the-dashboard .help textarea::-moz-placeholder {
+      color: #a6a8aa;
+      font-size: 1.1rem;
+      font-weight: 300; }
+    .the-dashboard .help textarea::placeholder {
+      color: #a6a8aa;
+      font-size: 1.1rem;
+      font-weight: 300; }
   .the-dashboard .section-title {
     color: #323b8c;
     font-weight: 700;

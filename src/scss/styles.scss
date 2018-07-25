@@ -502,6 +502,9 @@ LOGIN & CREATE ACCOUNT
             text-decoration: underline;
             opacity: 1;
         }
+        @include breakpoint(md_max) {
+            color: #fff;
+        }
     }
     .txt-giant {
         color: $blue;
@@ -1027,6 +1030,73 @@ DASHBOARD
             }
             .card-body {
                 color: #6d6e70;
+            }
+        }
+    }
+    .help {
+        .section-title {
+            padding-left: 70px;
+            @include breakpoint(lg_max) {
+                padding-left: 0;
+            }
+            &:before {
+                content: "";
+                background-image: url(../assets/icon-help-gray.svg);
+                background-size: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 0;
+                width: 52px;
+                height: 52px;
+                top: -5px;
+                @include breakpoint(lg_max) {
+                    width: 42px;
+                    height: 42px;
+                    position: relative;
+                    left: auto;
+                    top: auto;
+                    display: block;
+                }
+                @include breakpoint(sm_max) {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+        .box {
+            padding: 50px;
+        }
+        .btn {
+            padding: 5px 35px;
+        }
+        textarea {
+            resize: none;
+            line-height: 1.5;
+            &::-webkit-input-placeholder {
+                color: #a6a8aa;
+                font-size: 1.1rem;
+                font-weight: 300;
+            }
+            &:-ms-input-placeholder {
+                color: #a6a8aa;
+                font-size: 1.1rem;
+                font-weight: 300;
+            }
+            &::-ms-input-placeholder {
+                color: #a6a8aa;
+                font-size: 1.1rem;
+                font-weight: 300;
+            }
+            &::-moz-placeholder {
+                color: #a6a8aa;
+                font-size: 1.1rem;
+                font-weight: 300;
+            }
+            &::placeholder {
+                color: #a6a8aa;
+                font-size: 1.1rem;
+                font-weight: 300;
             }
         }
     }
